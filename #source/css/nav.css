@@ -1,0 +1,85 @@
+.header {
+   margin-top: 60px;
+   display: -ms-grid;
+   display: grid;
+   -ms-grid-columns: 1fr 2fr;
+   grid-template-columns: 1fr 2fr;
+   -ms-grid-rows: 1fr;
+   grid-template-rows: 1fr;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}.header > *:nth-child(1) {
+   -ms-grid-row: 1;
+   -ms-grid-column: 1;
+}.header > *:nth-child(2) {
+   -ms-grid-row: 1;
+   -ms-grid-column: 2;
+}
+
+.header__menu {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.menu__list-1 {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+.menu__list-1 li {
+   color: white;
+}
+
+.menu__list-2 {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+.menu__list-2 li {
+   color: #808080;
+}
+
+li {
+   margin-right: 20px;
+   -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+   transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+   position: relative;
+}
+li::before {
+   content: "";
+   width: 60%;
+   height: 0;
+   border-bottom: 0.5px solid;
+   background-color: white;
+   opacity: 0;
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   -webkit-transform: translate(-50%);
+           transform: translate(-50%);
+   -webkit-transition: 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+   transition: 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+   transition: 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   transition: 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+li:hover::before {
+   opacity: 1;
+   bottom: -5px;
+}
+li:last-child {
+   margin-right: 0;
+}
+li a {
+   font-size: 12px;
+   line-height: 14px;
+}

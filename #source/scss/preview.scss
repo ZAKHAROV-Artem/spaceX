@@ -1,0 +1,32 @@
+.preview{
+    .preview__text {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    
+    }
+    h1{
+        font-size: 64px;
+    line-height: 75px;
+    font-weight: 400;
+    }
+    .preview-text__sub {
+        max-width: 268px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 140%;
+    }
+    .scroll {
+        margin-top: 52px;
+        width: 59px;
+        height: 0px;
+    
+        border-bottom: 1px solid #FFFFFF;
+        transform: rotate(90deg);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,40 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__title {
+    margin-bottom: 45px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.main__overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .overview__params {
+        .params__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        li {
+            margin-bottom: 11px;
+            font-size: 18px;
+            line-height: 179.69%;
+        }
+    }
+}
+
+.main__deskript {
+    margin-top: 218px;
+
+    .desk__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+    }
+}
